@@ -1,8 +1,9 @@
 <p class="headtest">Component home works!</p>
 <h2>Chào bạn {{name}}</h2>
-<input value="{{name}}">
-<br>
-<input [value]="name" title="Đây là {{name}}"><br>
-<input [value]="name" [title]="'Đây là'+ name">
-<h2 *ngIf="age>18">Bạn quá già rồi</h2>
-<h2 *ngIf="age<18">Bạn còn trẻ lắm</h2>
+<input [(ngModel)]="name">
+ <br>
+<!--<input [value]="name" title="Đây là {{name}}"><br>
+<input [value]="name" [title]="'Đây là'+ name"> -->
+<!-- <h2 *ngIf="age>18">Bạn quá già rồi</h2>
+<h2 *ngIf="age<18">Bạn còn trẻ lắm</h2> -->
+<button (click)="resetName()">Reset Tên</button>
