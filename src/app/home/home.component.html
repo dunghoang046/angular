@@ -12,3 +12,16 @@
 <ul *ngFor="let item of traicay;let i=index">
     <li>{{i+1}}.{{item}}</li>
 </ul>
+<table id="customers">
+    <tr>
+        <th>STT</th>
+      <th>Tên </th>
+      <th>Giá</th>
+    </tr>
+    <tr *ngFor="let item of traicay2;let i=index">
+        <td>{{i+1}}</td>
+      <td>{{item.ten}}</td>
+      <td>{{item.gia}}</td>
+    </tr>
+
+</table>
