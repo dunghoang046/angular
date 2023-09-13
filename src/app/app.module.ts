@@ -7,12 +7,14 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import {FormsModule} from '@angular/forms'
 import { CommonModule } from '@angular/common';
+import { HighLightDirective } from './Directives/high-light.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    HighLightDirective
   ],
   imports: [
     BrowserModule,
